@@ -115,3 +115,15 @@ test(
         expect(parseNumber("false")).toBe(NaN);
     }
 );
+
+
+test(
+    "parse with spacing",
+    () => {
+        expect(parseNumber(" 0  ")).toBe(0);
+        expect(parseNumber("  1")).toBe(1);
+        expect(parseNumber("69   ")).toBe(69);
+        expect(parseNumber("   -100 ")).toBe(-100);
+        expect(parseNumber("  42    ")).toBe(42);
+    }
+);
