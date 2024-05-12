@@ -97,3 +97,21 @@ test(
         expect(parseNumber("")).toBe(NaN);
     }
 );
+
+
+test(
+    "parse true",
+    () => {
+        expect(parseNumber(true)).toBe(1);
+        expect(parseNumber("true")).toBe(1);
+    }
+);
+
+
+test(
+    "parse false",
+    () => {
+        expect(parseNumber(false)).toBe(NaN);
+        expect(parseNumber("false")).toBe(NaN);
+    }
+);

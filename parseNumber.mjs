@@ -3,9 +3,15 @@ export default function parseNumber (
 ) {
     if (typeof string === 'number') return string;
 
-    string = string ?? ""
-        .toString()
-        .trim();
+    string ??= "";
+
+    string = `${string}`.trim();
+
+    if (string === 'true')
+        return 1;
+    else if (string === 'false') {
+        return NaN;
+    }
 
     let value = NaN;
 
