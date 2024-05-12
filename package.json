@@ -1,6 +1,6 @@
 {
   "name": "@voidvoxel/parse-number",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse a string as a number",
   "main": "parseNumber.mjs",
   "type": "module",
