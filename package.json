@@ -1,0 +1,29 @@
+{
+  "name": "@voidvoxel/parse-number",
+  "version": "0.0.0",
+  "description": "Parse a string as a number",
+  "main": "parseNumber.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voidvoxel/node-chanceof.git"
+  },
+  "keywords": [
+    "chance",
+    "of",
+    "percent",
+    "percentage"
+  ],
+  "author": "Ashlynne Juniper",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/voidvoxel/node-chanceof/issues"
+  },
+  "homepage": "https://github.com/voidvoxel/node-chanceof#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
