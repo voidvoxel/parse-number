@@ -49,3 +49,51 @@ test(
         expect(value).toBeLessThan(0.1235);
     }
 );
+
+
+test(
+    "parse positive NaN",
+    () => {
+        expect(parseNumber("NaN")).toBe(NaN);
+    }
+);
+
+
+test(
+    "parse negative NaN",
+    () => {
+        expect(parseNumber("-NaN")).toBe(-NaN);
+    }
+);
+
+
+test(
+    "parse positive infinity",
+    () => {
+        expect(parseNumber("Infinity")).toBe(Infinity);
+    }
+);
+
+
+test(
+    "parse negative infinity",
+    () => {
+        expect(parseNumber("-Infinity")).toBe(-Infinity);
+    }
+);
+
+
+test(
+    "parse nothing",
+    () => {
+        expect(parseNumber()).toBe(NaN);
+    }
+);
+
+
+test(
+    "parse empty string",
+    () => {
+        expect(parseNumber("")).toBe(NaN);
+    }
+);
