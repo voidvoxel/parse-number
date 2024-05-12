@@ -3,7 +3,7 @@ export default function parseNumber (
 ) {
     if (typeof string === 'number') return string;
 
-    string = string
+    string = string ?? ""
         .toString()
         .trim();
 
